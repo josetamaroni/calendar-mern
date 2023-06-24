@@ -20,6 +20,7 @@ const event = [{
 export const CalendarPage = () => {
 
   const eventStyleGetter = ( event, start, end, isSelected ) => {
+    
     console.log({event, start, end, isSelected})
 
     const style = {
