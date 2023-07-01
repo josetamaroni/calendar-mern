@@ -20,7 +20,13 @@ const event = [{
 }]
 export const CalendarPage = () => {
 
+<<<<<<< HEAD
   const [lastView, setLastView] = useState(localStorage.getItem('lastView') || 'week')
+=======
+  const eventStyleGetter = ( event, start, end, isSelected ) => {
+    
+    console.log({event, start, end, isSelected})
+>>>>>>> respaldo
 
   const eventStyleGetter = ( event, start, end, isSelected ) => {
     // console.log({event, start, end, isSelected})
