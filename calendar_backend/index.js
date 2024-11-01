@@ -1,7 +1,6 @@
 const express = require('express');
 require('dotenv').config();
 
-console.log( process.env )
 // Crear el servidor
 const app = express();
 
@@ -9,11 +8,8 @@ const app = express();
 app.use( express.static('public') )
 
 // Rutas
-app.get('/', (req, res) => {
-    res.send({
-        ok: true
-    });
-})
+app.use( '/api/auth/', require('./routes/auth') )
+
 
 // Escuchar peticiones
 app.listen( process.env.PORT,()=>{
