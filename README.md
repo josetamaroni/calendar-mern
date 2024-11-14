@@ -1,2 +1,5 @@
 # calendar-mern
-Aplicación de calendario utilizando React, Node, Mongo y Express
+Aplicación de Calendario utilizando React, Node, Mongo y Express
+
+- Estandar de códigos
+https://www.restapitutorial.com/httpstatuscodes
