@@ -79,7 +79,6 @@ const loginUsuario = async (req, res = response) => {
             token
         })
         
-
     } catch (error) {
         console.log('Error - controller - loginUsuario', error);
         return res.status(500).json({
@@ -87,11 +86,6 @@ const loginUsuario = async (req, res = response) => {
             msg: 'Hable con el administrador'
         })
     }
-
-    res.status(200).send({
-        ok: true,
-        msg: 'login'
-    });
 }
 const revalidarToken = async (req, res = response) => {
 
